@@ -27,8 +27,8 @@ subprojects {
         implementation("com.linecorp.armeria:armeria:1.26.4")
         // Integrating with Spring Boot
         implementation(platform("com.linecorp.armeria:armeria-bom:1.26.4"))
-        implementation("com.linecorp.armeria:armeria-spring-boot3-starter")
-        implementation("com.linecorp.armeria:armeria-tomcat10")
+        implementation("com.linecorp.armeria:armeria-spring-boot-starter:0.99.7")
+        implementation("com.linecorp.armeria:armeria-tomcat9:1.26.4")
 
         // spring boot starter
         implementation("org.springframework.boot:spring-boot-starter:3.2.0")
