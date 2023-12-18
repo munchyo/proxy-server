@@ -7,4 +7,5 @@ plugins {
 dependencies {
     implementation(project(":proxy-server-a"))
     implementation(project(":proxy-server-b"))
+    implementation(project(":proxy-server-common"))
 }

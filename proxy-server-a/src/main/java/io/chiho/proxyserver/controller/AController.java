@@ -2,13 +2,12 @@ package io.chiho.proxyserver.controller;
 
 import com.linecorp.armeria.server.annotation.Get;
 import com.linecorp.armeria.server.annotation.Param;
-import com.linecorp.armeria.server.annotation.PathPrefix;
-import org.springframework.stereotype.Component;
+import io.chiho.proxyserver.annotation.Controller;
 
-@Component
-@PathPrefix("/a")
+@Controller
 public class AController {
-    @Get("/")
+
+    @Get
     public String defaultHello() {
         return "Hello, world! This message is from A server";
     }

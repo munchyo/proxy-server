@@ -5,4 +5,5 @@ plugins {
 }
 
 dependencies {
+    implementation(project(":proxy-server-common"))
 }

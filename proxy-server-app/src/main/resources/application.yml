@@ -1,10 +1,2 @@
 spring.main.web-application-type: none
 
-armeria:
-  ports:
-    - port: 8080
-      protocols:
-        - http
-#  internal-services:
-#    include: health
-#    port: 8090

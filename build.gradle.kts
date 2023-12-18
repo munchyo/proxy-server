@@ -27,11 +27,13 @@ subprojects {
         implementation("com.linecorp.armeria:armeria:1.26.4")
         // Integrating with Spring Boot
         implementation(platform("com.linecorp.armeria:armeria-bom:1.26.4"))
-        implementation("com.linecorp.armeria:armeria-spring-boot-starter:0.99.7")
-        implementation("com.linecorp.armeria:armeria-tomcat9:1.26.4")
+        implementation("com.linecorp.armeria:armeria-spring-boot3-starter:1.26.4")
+        runtimeOnly("com.linecorp.armeria:armeria-spring-boot3-actuator-autoconfigure:1.26.4")
 
         // spring boot starter
         implementation("org.springframework.boot:spring-boot-starter:3.2.0")
+        implementation("org.springframework.boot:spring-boot-autoconfigure:3.2.0")
+        implementation("org.springframework.boot:spring-boot-configuration-processor:3.2.0")
 
         // logging
         runtimeOnly("ch.qos.logback:logback-classic:1.4.11")

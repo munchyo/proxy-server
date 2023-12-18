@@ -8,6 +8,7 @@ dependencies {
     testImplementation(project(":proxy-server-app"))
     testImplementation(project(":proxy-server-a"))
     testImplementation(project(":proxy-server-b"))
+    testImplementation(project(":proxy-server-common"))
 
     testImplementation(platform("org.junit:junit-bom:5.9.1"))
     testImplementation("org.junit.jupiter:junit-jupiter")
