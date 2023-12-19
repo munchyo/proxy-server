@@ -5,10 +5,10 @@ plugins {
 }
 
 dependencies {
-    testImplementation(project(":proxy-server-app"))
+/*    testImplementation(project(":proxy-server-app"))
     testImplementation(project(":proxy-server-a"))
     testImplementation(project(":proxy-server-b"))
-    testImplementation(project(":proxy-server-common"))
+    testImplementation(project(":proxy-server-common"))*/
 
     testImplementation(platform("org.junit:junit-bom:5.9.1"))
     testImplementation("org.junit.jupiter:junit-jupiter")
@@ -21,6 +21,9 @@ dependencies {
 
     // spring boot starter
     testImplementation("org.springframework.boot:spring-boot-starter:3.2.0")
+    testImplementation("org.springframework.boot:spring-boot-autoconfigure:3.2.0")
+    testImplementation("org.springframework.boot:spring-boot-configuration-processor:3.2.0")
+    testImplementation("org.springframework.boot:spring-boot-starter-test:3.2.0")
 
     // logging
     testRuntimeOnly("ch.qos.logback:logback-classic:1.4.11")

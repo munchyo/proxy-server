@@ -20,25 +20,25 @@ public class ArmeriaConfig {
 
     @Bean
     private void init() {
-        applicationContext.getBeansWithAnnotation(Controller.class)
-            .forEach((name, value) -> newBackendServer(
-                    getPathPrefix(name),
-                    value
-                ).start().join()
-            );
-
-        final Server proxyServer = newProxyServer();
-
-
-        proxyServer.closeOnJvmShutdown(() -> {
-//            backend1.stop().join();
-//            backend2.stop().join();
-
-            proxyServer.stop().join();
-            log.info("The proxy server has been stopped.");
-        });
-
-        proxyServer.start().join();
+//        applicationContext.getBeansWithAnnotation(Controller.class)
+//            .forEach((name, value) -> newBackendServer(
+//                    getPathPrefix(name),
+//                    value
+//                ).start().join()
+//            );
+//
+//        final Server proxyServer = newProxyServer();
+//
+//
+//        proxyServer.closeOnJvmShutdown(() -> {
+////            backend1.stop().join();
+////            backend2.stop().join();
+//
+//            proxyServer.stop().join();
+//            log.info("The proxy server has been stopped.");
+//        });
+//
+//        proxyServer.start().join();
     }
 
     @SneakyThrows
